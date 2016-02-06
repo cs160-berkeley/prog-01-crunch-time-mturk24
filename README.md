@@ -2,17 +2,24 @@
 
 Briefly describe your app here.
 
+My app, called CalorieCount, is a simple Android application with many different workout metrics designed to be a convenient calorie conversion application for anyone to use effectively. 
+
 ## Authors
 
-FirstName LastName ([your_email@berkeley.edu](mailto:your_email@berkeley.edu))
+FirstName LastName ([your_email@berkeley.edu](mturk@berkeley.edu))
+
+Matt Turk 
 
 ## Demo Video
 
-See [your demo video title here] (https://link_to_your_video)
+See [CalorieCount Android](https://youtu.be/R499l-sYFpY)
 
 ## Screenshots
 
-<img src="screenshots/main.png" height="400" alt="Screenshot"/>
+<img src="screenshots/caloriecount1.png" height="400" alt="Screenshot"/>
+<img src="screenshots/caloriecount2.png" height="400" alt="Screenshot"/>
+<img src="screenshots/caloriecount3.png" height="400" alt="Screenshot"/>
+<img src="screenshots/caloriecount4.png" height="400" alt="Screenshot"/>
 
 ## Acknowledgments
 
