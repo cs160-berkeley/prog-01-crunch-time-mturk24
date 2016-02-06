@@ -6,9 +6,9 @@ My app, called CalorieCount, is a simple Android application with many different
 
 ## Authors
 
-FirstName LastName ([your_email@berkeley.edu](mturk@berkeley.edu))
+Matt Turk ([your_email@berkeley.edu](mturk@berkeley.edu))
 
-Matt Turk 
+
 
 ## Demo Video
 
