@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main"
+    tools:context="com.example.matthewturk.caloriecount.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="CalorieCount"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/heartrate"
+        android:background="#00ffffff"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignEnd="@+id/caloriesBurned" />
+
+    <Spinner
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/spinner"
+        android:spinnerMode="dropdown"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:text="@string/choose_exercise"
+        android:id="@+id/textView"
+        android:layout_alignBaseline="@+id/spinner"
+        android:layout_alignBottom="@+id/spinner"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/repBox"
+        android:layout_below="@+id/minuteNumber"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Number of Minutes"
+        android:id="@+id/minuteNumber"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="72dp"
+        android:text="Convert"
+        android:id="@+id/convertButton"
+        android:layout_alignTop="@+id/otherExercisesButton"
+        android:layout_toStartOf="@+id/textView2"
+        android:layout_alignEnd="@+id/burnBox" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="72dp"
+        android:text="Compare Other Exercises"
+        android:onClick="sendMessage"
+        android:id="@+id/otherExercisesButton"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/minuteNumber" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id="@+id/weightText"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Enter Your Weight"
+        android:id="@+id/weightView"
+        android:layout_below="@+id/repBox"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Calories Burned"
+        android:id="@+id/caloriesBurned"
+        android:layout_below="@+id/weightText"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="43dp" />
+
+    <ListView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/mainListView"
+        android:layout_below="@+id/textView"
+        android:layout_above="@+id/convertButton"
+        android:layout_alignEnd="@+id/otherExercisesButton"
+        android:layout_toEndOf="@+id/minuteNumber" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id="@+id/burnBox"
+        android:layout_below="@+id/caloriesBurned"
+        android:layout_alignParentStart="false" />
+
+</RelativeLayout>
