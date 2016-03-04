@@ -1,6 +1,175 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center|top"
+    android:background="@drawable/niceblue"
+    android:padding="20dp"
+    android:weightSum="1">
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:gravity="center|top"
+        android:text="Representatives"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Bob Monk"
+        android:id="@+id/textView4"
+        android:gravity="center|top"
+        android:background="#ffffff"
+        android:textColor="#fa0303"
+        android:layout_gravity="right"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_alignStart="@+id/textView7" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Bobmonk@gmail.com                         bmonk.com                                             &quot;Obama is bad&quot;"
+        android:id="@+id/textView2"
+        android:gravity="center|top"
+
+        android:textColor="#080808"
+        android:background="#ffffff"
+        android:layout_gravity="right"
+        android:layout_below="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:layout_width="104dp"
+        android:layout_height="125dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/bobjindal"
+        android:layout_below="@+id/textView1"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="mchalmers@gmail.com          mchalmers.com                        &quot;I love being rich&quot;"
+        android:id="@+id/textView5"
+        android:gravity="center|top"
+        android:textColor="#080808"
+        android:background="#ffffff"
+        android:layout_gravity="right"
+        android:layout_above="@+id/button5"
+        android:layout_alignParentEnd="true"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:layout_width="104dp"
+        android:layout_height="125dp"
+        android:id="@+id/imageView3"
+        android:src="@drawable/bieber"
+        android:layout_alignTop="@+id/textView8"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="104dp"
+        android:layout_height="140dp"
+        android:id="@+id/imageView4"
+        android:src="@drawable/rickrosscompressor"
+        android:layout_alignTop="@+id/textView7"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="240dp"
+        android:layout_height="65dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Jorgmason@gmail.com                                          Jorgmason.com                    &quot;Shoutout to America&quot;"
+        android:id="@+id/textView6"
+        android:gravity="center|top"
+        android:textColor="#080808"
+        android:background="#ffffff"
+        android:layout_gravity="right"
+        android:layout_below="@+id/textView7"
+        android:layout_alignStart="@+id/textView7"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Jorg Mason"
+        android:id="@+id/textView7"
+        android:gravity="center|top"
+        android:background="#ffffff"
+        android:textColor="#0313fa"
+        android:layout_gravity="right"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/textView8" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:text="More Info"
+        android:id="@+id/button3"
+        android:background="#fd0202"
+        android:onClick="getNewView"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:text="More Info"
+        android:id="@+id/button4"
+        android:background="#0202fd"
+        android:onClick="getNewView"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textView6"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_alignEnd="@+id/textView6" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:text="More Info"
+        android:id="@+id/button5"
+        android:background="#fd0202"
+        android:textColor="#ffffff"
+        android:onClick="getNewView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_alignEnd="@+id/textView5" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Mario Chalmers"
+        android:id="@+id/textView8"
+        android:gravity="center|top"
+        android:background="#ffffff"
+        android:textColor="#fa0303"
+        android:layout_gravity="right"
+        android:layout_above="@+id/textView5"
+        android:layout_alignStart="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:gravity="center|top"
+        android:text="Senators"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30dp"
+        android:layout_above="@+id/imageView4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
