@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/black">
+
+
+    <ImageView
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:src="@drawable/usflag"
+        android:id="@+id/imageView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="112dp"
+        android:layout_height="95dp"
+        android:src="@drawable/rickrosscompressor"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageView3" />
+    <TextView
+        android:layout_width="93dp"
+        android:layout_height="84dp"
+        android:text="Jorg Mason"
+        android:layout_gravity="center_vertical"
+        android:textColor="#ffffff"
+        android:id="@+id/textView"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="93dp"
+        android:layout_height="84dp"
+        android:text="Democrat"
+        android:layout_gravity="center_vertical"
+        android:textColor="#072cfd"
+        android:id="@+id/textView1"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="22dp" />
+
+</RelativeLayout>

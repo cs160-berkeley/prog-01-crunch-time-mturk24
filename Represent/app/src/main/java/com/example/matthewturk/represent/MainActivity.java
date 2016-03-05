@@ -1,5 +1,9 @@
 package com.example.matthewturk.represent;
 
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -71,7 +75,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
+//
+//                watchIntent = new Intent(getBaseContext(), PhoneToWatchService.class);
+//                watchIntent.putExtra("CANDIDATE_NAME", "John Doe");
+//                watchIntent.putExtra("PARTY_NAME", "Democrat");
+//                startService(watchIntent);
+//
+//                zipCodeEntry = zipCode.getText().toString();
+//                phoneIntent = new Intent(phoneHomeScreen.this,phoneCongressionalCandidates.class);
+//                phoneIntent.putExtra("zipCodeEntry", zipCodeEntry);
+//                startActivity(phoneIntent);
+//
     public void addListenerOnButton1() {
 
         button2 = (Button) findViewById(R.id.button2);
@@ -148,4 +162,5 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
 }
